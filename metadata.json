@@ -1,0 +1,6 @@
+{
+  "name": "KAMPASS - KAM Business Simulation",
+  "description": "KAMPASS: A hybrid Key Account Management (KAM) business simulation platform by LDL hub (Learn • Develop • Lead) for facilitators and competitive learning teams.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

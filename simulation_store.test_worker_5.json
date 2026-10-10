@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 2,
+  "facilitators": {
+    "fac_sync_test_id": {
+      "profile": {
+        "id": "fac_sync_test_id",
+        "name": "Synced Facilitator",
+        "email": "",
+        "title": "Master Trainer",
+        "organization": "KAMPASS Corp",
+        "createdAt": "2026-10-10T08:43:34.913Z",
+        "role": "Facilitator"
+      },
+      "passwordHash": "",
+      "salt": ""
+    }
+  },
+  "sessions": {}
+}

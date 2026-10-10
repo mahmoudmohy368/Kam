@@ -1,0 +1,45 @@
+{
+  "entities": {
+    "facilitator": {
+      "title": "Facilitator",
+      "description": "Facilitator trainer managing simulation cohorts",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "organization": { "type": "string" },
+        "title": { "type": "string" }
+      },
+      "required": ["id", "name", "email"]
+    },
+    "session": {
+      "title": "SimulationSession",
+      "description": "KAMPASS KAM strategic simulation session",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "code": { "type": "string" },
+        "sessionName": { "type": "string" },
+        "organization": { "type": "string" },
+        "industry": { "type": "string" },
+        "competitorName": { "type": "string" },
+        "teamsCount": { "type": "number" },
+        "currentQuarter": { "type": "number" },
+        "facilitatorId": { "type": "string" },
+        "facilitatorEmail": { "type": "string" }
+      },
+      "required": ["id", "code", "sessionName", "facilitatorId"]
+    }
+  },
+  "firestore": {
+    "/facilitators/{facilitatorId}": {
+      "schema": "facilitator",
+      "description": "Registered facilitator profiles"
+    },
+    "/sessions/{sessionId}": {
+      "schema": "session",
+      "description": "Simulation cohort sessions and team real-time states"
+    }
+  }
+}
